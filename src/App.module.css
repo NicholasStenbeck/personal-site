@@ -5,6 +5,7 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1.5rem 1fr 1.5em;
+  grid-template-rows: max(6rem) 2fr 1fr max(12rem);
   grid-template-areas:
     'header header header'
     '...... main   ......'
