@@ -36,17 +36,18 @@
   content: "";
   display: block;
   height: 5px;
-  width: 0%;
-  left: 50%;
+  width: 100%;
   background-color: var(--font-color);
 
   position: absolute;
   top: 0;
 
-  transition: all var(--animation-setup);
+  transform: rotate3d(0, 1, 0, 90deg);
+  will-change: transform;
+
+  transition: transform var(--animation-setup);
 }
 
 .Navbar a:hover::before {
-  width: 100%;
-  left: 0%;
+  transform: rotate3d(0, 1, 0, 0deg);
 }
