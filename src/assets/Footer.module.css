@@ -20,13 +20,13 @@
   padding-bottom: 0;
   max-height: 12rem;
   display: flex;
-  flex-direction: column;
   justify-content: flex-end;
 }
 
 .MainImage {
   max-height: 100%;
-  width: 100%;
+  max-width: 100%;
   float: right;
   bottom: 0;
+  align-self: flex-end;
 }
