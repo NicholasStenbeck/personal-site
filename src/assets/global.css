@@ -1,0 +1,18 @@
+:root {
+  background-color: #111;
+  background: url(/src/assets/background.jpg);
+
+  --layout-background-color-1: rgb(51, 114, 93);
+  --font-color: white;
+  --animation-setup: ease-in-out 0.25s;
+}
+
+a {
+  color: var(--font-color);
+  opacity: 0.85;
+  transition: opacity var(--animation-setup);
+}
+
+a:hover {
+  opacity: 1;
+}

@@ -1,0 +1,52 @@
+.Header {
+  background-color: var(--layout-background-color-1);
+}
+
+.Navbar {
+  height: 100%;
+}
+
+.Navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.Navbar li {
+  padding: 1rem 0;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.Navbar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.Navbar a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0%;
+  left: 50%;
+  background-color: var(--font-color);
+
+  position: absolute;
+  top: 0;
+
+  transition: all var(--animation-setup);
+}
+
+.Navbar a:hover::before {
+  width: 100%;
+  left: 0%;
+}

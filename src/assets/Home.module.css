@@ -1,22 +1,6 @@
-.Home {
-  display: flex;
-  justify-content: center;
-}
-
-.Tree {
-  float: right;
-  max-width: 80%;
-  shape-outside: url(/src/assets/Jasontree.png);
-  shape-margin: 2rem;
-}
-
 .title {
-  color: black;
   line-height: 1.1;
-}
-
-.article {
-
+  text-align: left;
 }
 
 .paragraph {

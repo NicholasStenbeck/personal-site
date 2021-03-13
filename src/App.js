@@ -4,18 +4,27 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Home from 'pages/Home.js';
-import 'App.css';
+import 'assets/global.css';
+import classes from "App.module.css";
+
+import { Home, Test } from 'pages';
+import { Footer, Header } from 'parts';
 
 export default function App() {
   return (
     <Router>
-      <div className='App'>
-        <Switch>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+      <div className={classes.App}>
+        <Header className={classes.header} />
+        <main className={classes.main}>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/test" component={Test} />
+          </Switch>
+        </main>
+        <aside className={classes.sidebar}>
+          I am a sidenote
+        </aside>
+        <Footer className={classes.footer} />
       </div>
     </Router>
   );

@@ -1,0 +1,26 @@
+.Footer {
+  display: flex;
+  background-color: var(--layout-background-color-1);
+}
+
+.Footer > * {
+  flex-basis: 100%;
+}
+
+.LinkSection {
+}
+
+.LinkList {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.PhotoSection {
+  padding-bottom: 0;
+  max-height: 12rem;
+}
+
+.MainImage {
+  height: 100%;
+  float: right;
+}
