@@ -2,6 +2,9 @@
   display: flex;
   background-color: var(--layout-background-color-1);
   padding-left: 2em;
+  box-shadow:
+    0 1rem 1rem rgba(0, 0, 0, 0.5),
+    inset 0 1rem 1rem -1rem rgba(0, 0, 0, 0.5);
 }
 
 .Footer > * {
@@ -29,4 +32,5 @@
   float: right;
   bottom: 0;
   align-self: flex-end;
+  filter: drop-shadow(10px 5px 5px rgba(0, 0, 0, 0.5));
 }

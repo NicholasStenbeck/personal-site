@@ -1,9 +1,11 @@
-.title {
+.Article h2 {
   line-height: 1.1;
   text-align: left;
+  position: sticky;
+  top: 0;
 }
 
-.paragraph {
+.Article p {
   max-width: 50ch;
   line-height: 1.5;
   text-align: left;

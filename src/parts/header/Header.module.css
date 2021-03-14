@@ -1,5 +1,11 @@
 .Header {
   background-color: var(--layout-background-color-1);
+  box-shadow:
+    0 1rem 1rem rgba(0, 0, 0, 0.5);
+  height: 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .Navbar {
@@ -37,7 +43,7 @@
   display: block;
   height: 5px;
   width: 100%;
-  background-color: var(--font-color);
+  background-color: rgb(var(--font-color));
 
   position: absolute;
   top: 0;

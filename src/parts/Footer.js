@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import classes from 'assets/Footer.module.css';
-import CvPhotoCompressed from 'assets/cv-photo-compressed.png';
+import classes from './footer/Footer.module.css';
+import { CvPhoto } from 'assets';
 
 const Footer = ({ className }) => (
   <footer className={`${className} ${classes.Footer}`} >
@@ -13,7 +13,7 @@ const Footer = ({ className }) => (
       </ul>
     </section>
     <section className={classes.PhotoSection}>
-      <img src={CvPhotoCompressed} alt='My beautiful smile' className={classes.MainImage}></img>
+      <img src={CvPhoto} alt='My beautiful smile' className={classes.MainImage}></img>
     </section>
   </footer>
 );

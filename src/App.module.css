@@ -1,18 +1,22 @@
 .App {
-  backdrop-filter: blur(8px);
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-  color: var(--font-color);
+  color: rgb(var(--font-color));
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1.5rem 1fr 1.5em;
-  grid-template-rows: max(6rem) 2fr 1fr max(12rem);
+  grid-template-rows: 1fr max(12rem);
   grid-template-areas:
-    'header header header'
     '...... main   ......'
-    '...... side   ......'
     'footer footer footer';
   justify-content: center;
 }
+
+.main { grid-area: main; }
+.sidebar {
+  grid-area: side;
+  display: none;
+}
+.footer { grid-area: footer; }
 
 .main,
 .sidebar {
@@ -23,15 +27,13 @@
 @media only screen and (min-width: 769px) {
   .App {
     grid-template-columns: 1.5rem minmax(200px, 350px) minmax(400px, 100%) 1.5em;
-    grid-template-rows: max(6rem) 1fr max(12rem);
+    grid-template-rows: 1fr max(12rem);
     grid-template-areas:
-      'header header header header'
       '...... side   main   ......'
       'footer footer footer footer';
   }
-}
 
-.header { grid-area: header; }
-.main { grid-area: main; }
-.sidebar { grid-area: side; }
-.footer { grid-area: footer; }
+  .sidebar {
+    display: block;
+  }
+}

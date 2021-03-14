@@ -1,40 +1,18 @@
 :root {
   background-color: #111;
-  background: url(/src/assets/background.jpg);
 
   --layout-background-color-1: rgb(51, 114, 93);
-  --font-color: white;
+  --layout-background-contrast-color1: rgb(26, 201, 3);
+  --font-color: 255, 255, 255;
   --animation-setup: ease-in-out 0.25s;
 }
 
 a {
-  color: var(--font-color);
+  color: rgb(var(--font-color));
   opacity: 0.85;
   transition: opacity var(--animation-setup);
 }
 
 a:hover {
   opacity: 1;
-}
-
-/* Background blur fix for Firefox */
-@-moz-document url-prefix() {
-  :root {
-    background: none;
-    overflow: hidden;
-  }
-
-  :root::before {
-    content: "";
-    background: url(/src/assets/background.jpg);
-    transform: scale(1.1);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-
-    filter: blur(8px);
-
-    position: absolute;
-    z-index: -1;
-  }
 }
