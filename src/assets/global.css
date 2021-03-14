@@ -1,6 +1,8 @@
 :root {
   background-color: var(--layout-background-color-0);
 
+  --title-font-size: 2rem;
+  --font-size: 1.2rem;
   --layout-background-color-0: #111;
   --layout-background-color-1: rgb(51, 114, 93);
   --layout-background-contrast-color1: rgb(26, 201, 3);
