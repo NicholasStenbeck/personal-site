@@ -13,7 +13,7 @@ const ReadProgressBar = () => {
     }
 
     const element = scrollTargetRef.current;
-    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) - 100;
     const totalHeight = element.clientHeight - element.offsetTop - vh;
     const windowScrollTop = window.pageYOffset ?? document.documentElement.scrollTop ?? document.body.scrollTop ?? 0;
 
