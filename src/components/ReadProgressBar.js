@@ -17,6 +17,10 @@ const ReadProgressBar = () => {
     const totalHeight = element.clientHeight - element.offsetTop - vh;
     const windowScrollTop = window.pageYOffset ?? document.documentElement.scrollTop ?? document.body.scrollTop ?? 0;
 
+    if (windowScrollTop === 0) {
+      return setReadingProgress(0);
+    }
+
     if (windowScrollTop > totalHeight) {
       return setReadingProgress(100);
     }

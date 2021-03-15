@@ -10,12 +10,14 @@ import classes from "App.module.css";
 import { Home, Test } from 'pages';
 import { Footer, Header } from 'parts';
 import { DataContext } from "Context";
+import ScrollToTop from "components/ScrollToTop";
 
 export default function App() {
   const scrollTargetRef = useRef();
 
   return (
     <Router>
+      <ScrollToTop />
       <DataContext.Provider value={{ scrollTargetRef }}>
           <Header className={classes.header} />
         <div className={classes.App}>
